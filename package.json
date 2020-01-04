@@ -1,0 +1,38 @@
+{
+  "name": "project-gel",
+  "version": "0.0.0",
+  "description": "Final name TBD. A software UX design language targeted at digitally literate laptop/desktop users. Emphasis on delightful human-machine interface that minimizes cognitive load and maximizes positive brand reinforcement.",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^4.2.0",
+    "style-inject": "^0.3.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serpenteagle/project-gel.git"
+  },
+  "author": "Shashank Rajesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serpenteagle/project-gel/issues"
+  },
+  "homepage": "https://github.com/serpenteagle/project-gel#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rematrix": "^0.4.1",
+    "styled-components": "^4.4.1"
+  }
+}
