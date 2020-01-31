@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import styleInject from "style-inject";
-
-import SpaceNav from "../src/SpaceNav/SpaceNav.js";
-import Space from "../src/SpaceNav/Space.js";
+import SpaceGrid from "../src/components/SpaceGrid/SpaceGrid";
+import Space from "../src/components/SpaceGrid/Space";
 
 styleInject(`
     body {
@@ -16,6 +15,7 @@ styleInject(`
     #root {
         height: 100%;
         width: 100%;
+        transform: scale(.25);
     }
 `);
 
@@ -27,11 +27,9 @@ const Container = styled.div`
 const App = props => {
   return (
     <Container>
-      <SpaceNav active={null}>
-          <Space/>
-          <Space/>
-          <Space/>
-      </SpaceNav>
+      <SpaceGrid>
+        <Space area="B2"></Space>
+      </SpaceGrid>
     </Container>
   );
 };
